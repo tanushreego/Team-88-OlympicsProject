@@ -15,9 +15,9 @@ Website Link: https://olympics-analysis-vit.github.io/<br>
 
 Tableau Public server link:<br>
 
-https://public.tableau.com/app/profile/sparsh.wabhale/viz/OlympicAtheletdat aset_16880435094160/Story1?publish=yes<br>
+https://public.tableau.com/app/profile/sparsh.wabhale/viz/OlympicAtheletdataset_16880435094160/Story1?publish=yes<br>
 
-Demo Video: https://drive.google.com/file/d/1oWL1meLjYpd0fyiJsAcIjZ- F6swlw5dZ/view?usp=sharing<br>
+Demo Video: https://drive.google.com/file/d/1oWL1meLjYpd0fyiJsAcIjZ-F6swlw5dZ/view?usp=sharing<br>
 
 Videos Link:<br>
-https://drive.google.com/drive/folders/1APFwtbGpv2cs3rXwbUncuwZyoVpQN oLx?usp=sharing<br>
+https://drive.google.com/drive/folders/1APFwtbGpv2cs3rXwbUncuwZyoVpQNoLx?usp=sharing<br>
