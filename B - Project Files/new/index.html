@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Olympics Data Analysis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Olympics - Data Analysis</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="{{url_for('story')}}">Story</a></li>
+          <li><a href="{{url_for('insights')}}">Insights</a></li>
+          <li><a href="{{url_for('dashboards')}}">Dashboards</a></li>
+          <li><a href="{{url_for('about')}}">About us</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Data-driven insights on Olympic sports participation and performance</h2>
+          <p data-aos="fade-up" data-aos-delay="100">
+            The modern Olympic Games or Olympics are leading international sporting events featuring summer and winter sports competitions in which thousands of athletes from around the world participate in a variety of competitions. The Olympic Games are held every four years, with the Summer and Winter Games alternating by occurring every four years but two years apart.
+          </p>
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400" >
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="206" data-purecounter-duration="1.5" class="purecounter"></span>
+                <p>Countries</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="66" data-purecounter-duration="1.5" class="purecounter"></span>
+                <p>Sports</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="134732" data-purecounter-duration="1.5" class="purecounter"></span>
+                <p>&nbsp;&nbsp;Participants</p>
+              </div>
+            </div><!-- End Stats Item -->
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="static/assets/img/olympics.png" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <img src="static/assets/img/History.webp" class="img-fluid" alt="">
+            <a href="https://youtu.be/mQ94xbXnYu4" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <h3>History</h3>
+            <p>
+              The 1896 Summer Olympics, officially known as the Games of the I Olympiad and commonly known as Athens 1896, was the first international Olympic Games held in modern history. Organised by the International Olympic Committee (IOC), which had been created by French aristocrat Pierre de Coubertin, it was held in Athens, Greece, from 6 to 15 April 1896.
+              Fourteen nations (according to the IOC, though the number is subject to interpretation) and 241 athletes (all males; this number is also disputed) took part in the games. Participants were all European, or living in Europe, with the exception of the United States team. Over 65% of the competing athletes were Greek. Winners were given a silver medal, while runners-up received a copper medal. 
+            </p>
+          </div>
+        </div>
+        <div class='History' id='viz1688051296025' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ol&#47;OlympicAtheletdataset_16880435094160&#47;History&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='OlympicAtheletdataset_16880435094160&#47;History' />
+            <param name='tabs' value='yes' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ol&#47;OlympicAtheletdataset_16880435094160&#47;History&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>                
+          <script type='text/javascript'>                    
+                  var divElement = document.getElementById('viz1688051296025');                    
+                  var vizElement = divElement.getElementsByTagName('object')[0];                    
+                  if ( divElement.offsetWidth > 800 ) 
+                  { vizElement.style.minWidth='1100px';
+                  vizElement.style.maxWidth='100%';
+                  vizElement.style.minHeight='950px';
+                  vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';
+                  } else if ( divElement.offsetWidth > 500 ) 
+                  { vizElement.style.minWidth='1100px';
+                  vizElement.style.maxWidth='100%';
+                  vizElement.style.minHeight='950px';
+                  vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';
+                  } else { vizElement.style.minWidth='1100px';
+                  vizElement.style.maxWidth='100%';
+                  vizElement.style.minHeight='1450px';
+                  vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';
+                  }                     
+                  var scriptElement = document.createElement('script');                    
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+          </script>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="service" class="services pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>SPORTS IN OLYMPICS</span>
+          <h2>SPORTS IN OLYMPICS</h2>
+
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-img">
+                <img src="static/assets/img/Gymnastics.jpg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Gymnastics</a></h3>
+              <p>
+                Gymnastics combines athleticism, strength, and grace as athletes perform breathtaking acrobatic routines on various apparatus such as the balance beam, uneven bars, vault, and floor exercise, showcasing their flexibility, power, and precision.
+              </p>
+              </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="card-img">
+                <img src="static/assets/img/Track.webp" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Track & Field</a></h3>
+              <p>
+                Track and field events encompass a wide range of athletic disciplines, including sprints, long-distance running, hurdles, high jump, long jump, shot put, discus throw, and javelin throw. Athletes compete in individual events, pushing their physical limits and aiming for faster times, higher jumps, and longer throws.
+              </p>
+              </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-img">
+                <img src="static/assets/img/Swimming.png" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Swimming</a></h3>
+              <p>
+                Swimmers compete in various swimming styles such as freestyle, backstroke, breaststroke, and butterfly, showcasing their speed, endurance, and technique. Races range from short sprints to longer distances, and swimmers strive to break records while demonstrating their exceptional skill in the water.
+              </p>
+              </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <div class="card-img">
+                <img src="static/assets/img/Basketball.jpg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">BasketBall</a></h3>
+              <p>
+                Basketball is a fast-paced team sport where players aim to shoot the ball into the opponent's hoop while preventing the other team from scoring. With its high-energy gameplay, skilled ball handling, and strategic teamwork, basketball captivates fans worldwide and showcases exceptional athleticism and coordination.
+              </p>
+              </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <div class="card-img">
+                <img src="static/assets/img/Football.jpg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Football</a></h3>
+              <p>
+                Football, or soccer, is a globally popular sport that brings together teams competing to score goals by maneuvering a ball into the opponent's net. Combining speed, agility, and tactical play, football demands both individual skill and collective teamwork, captivating audiences with its passion and intensity.
+              </p>
+              </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card">
+              <div class="card-img">
+                <img src="static/assets/img/Table Tennis.webp" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Table Tennis</a></h3>
+              <p>
+                Table tennis, also known as ping pong, is a fast-paced racket sport played on a table. Players showcase lightning-fast reflexes, precision, and strategic shot placement as they compete in singles or doubles matches, making table tennis a thrilling sport that requires exceptional hand-eye coordination and agility.
+              </p>
+              </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Data Analysis</h3>
+            <p> In this project we have analyzed data to gain insights about Performance of countries, Atheltes and various kind of factors which play a key role in Olympics</p>
+            <a class="cta-btn" href="insights.html">Gain Insights</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+  
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="slides-1 swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="static/assets/img/team/Mary Kom.jpeg" class="testimonial-img" alt="">
+                <h3>Mary Kom</h3>
+                <h4>Indian professional boxer </h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  It's not about how many times you fall down, but how many times you get back up.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="static/assets/img/team/PV Sindhu.jpg" class="testimonial-img" alt="">
+                <h3>PV Sindhu</h3>
+                <h4>Indian badminton player</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Dreams do come true if you work hard and never give up
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="static/assets/img/team/Usain Bolt.webp" class="testimonial-img" alt="">
+                <h3>Usain Bolt</h3>
+                <h4>Jamaican sprinter</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Don't think about the start of the race; think about the ending
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <h2>Olympics Data Analysis</h2>
+          <p>Hope you found something insightful in our project</p>
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
