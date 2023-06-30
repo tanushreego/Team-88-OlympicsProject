@@ -18,4 +18,4 @@ https://public.tableau.com/app/profile/sparsh.wabhale/viz/OlympicAtheletdataset_
 
 Demo Video: https://drive.google.com/file/d/1oWL1meLjYpd0fyiJsAcIjZ-F6swlw5dZ/view?usp=sharing<br>
 
-Videos Link: https://drive.google.com/drive/folders/1APFwtbGpv2cs3rXwbUncuwZyoVpQNoLx?usp=sharing<br>
+Tableau Visualisation Videos Link: https://drive.google.com/drive/folders/1APFwtbGpv2cs3rXwbUncuwZyoVpQNoLx?usp=sharing<br>
